@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="../styles/play_board_style.css" rel="stylesheet" />
+    <script src="../javaScripts/play_board_code.js"></script>
+    <title></title>
+</head>
+
+<body onload="start()" class="flex-container column">
+    <header class="flex-container row" id="header">
+        <!--<div id="modal"></div>-->
+        <img class="life" id="life1" src="../images/מוט_עץ.png" />
+        <img class="life" id="life2" src="../images/מוט_עץ.png" />
+        <img class="life" id="life3" src="../images/מוט_עץ.png" />
+        <div id="points-container" class="flex-container row"></div>
+        <div id="home"><a href="begining_page.html">HOME</a></div>
+        <div id="stop" onclick="stopGame()">STOP</div>
+        <div id="finish" type="button" value="Reload Page" onClick="document.location.reload(true)"></div>
+        <a href="score_page.html" id="resultLink"></a>
+        <div id="suspend" type="button" onclick="continueGame()"></div>
+    </header>
+
+    <main class="flex-container row">
+        <aside>
+            <div class="time">
+                <div id="t" class="timer" onclick="animation()"></div>
+            </div>
+        </aside>
+        <section class="flex-container column">
+            <img id="found_button" onclick="check() ,animation()" src="../images/מוט_עץ.png" />
+            <div id="board">
+                <!--<div id="section1" class="flex-container column"></div>
+                <div id="section2" class="flex-container column"></div>
+                <div id="section3" class="flex-container row"></div>-->
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

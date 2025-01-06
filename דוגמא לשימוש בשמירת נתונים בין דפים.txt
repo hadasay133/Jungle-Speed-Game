@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <title>דף בית</title>
+    <link href="level.css" rel="stylesheet" />
+    <script src="level.js"></script>
+</head>
+<body>
+    <section id="a">
+        <input id="c" class="grab" type="button" value="שלב 2" onclick="saveLevel(2)" />
+        <input id="b" class="grab" type="button" value="שלב 1" onclick="saveLevel(1)" />
+    </section>
+    <img src="img/תמונה1 (2).png" id="e" />
+</body>
+</html>
+
+
+
+function saveLevel(level) {
+    sessionStorage.level = level;
+ open("../game/play.html","_self");
+}
+
+function getLevel() {
+    if (sessionStorage.level == '2') {
+              totalRows = 5;
+        cellsInRow = 5;
+    }
+    else {
+        totalRows = 4;
+        cellsInRow = 4;
+    }
+}
+

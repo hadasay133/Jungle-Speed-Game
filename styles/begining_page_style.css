@@ -1,0 +1,74 @@
+﻿body {
+    /*background-image: url('../images/background-4052240_960_720.jpg');*/
+    background-image: url('../images/תמונת_רקע_למשחק.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: red;
+    background-size: 100vw 50vw;
+    overflow: hidden;
+}
+p {
+    font-family: -webkit-pictograph;
+    font-size: 300px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    animation-name: headLine;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+#start_link {
+    background-image: url('../images/arrow-1217949__341.png');
+    background-repeat: no-repeat;
+    background-size: 30vh 30vh;
+    font-family: -webkit-pictograph;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    float:right;
+    margin-top: 35%;
+    margin-right:5%;
+    width:30vh;
+    height:30vh;
+    text-decoration:none;
+    animation-name:arrow;
+    animation-direction:alternate;
+    animation-duration:0.5s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+}
+#instraction_link {
+    background-image: url('../images/arrow-1217949__340.png');
+    background-repeat: no-repeat;
+    background-size: 30vh 30vh;
+    font-family: -webkit-pictograph;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    float: left;
+    margin-top: 35%;
+    margin-left: 5%;
+    width: 30vh;
+    height: 30vh;
+    text-decoration: none;
+    animation-name: arrow;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes headLine {
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1 ,1) rotate(360deg);
+    }
+}
+@keyframes arrow {
+    100% {
+        transform: translate(25px);
+    }
+}
